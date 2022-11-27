@@ -1,0 +1,77 @@
+Jack-Changs-MacBook-Air:Calculator jack$ git init
+Initialized empty Git repository in /Users/jack/Projects/Calculator/.git/
+Jack-Changs-MacBook-Air:Calculator jack$ git remote add origin https://github.com/Jack0723/Calculator.git
+Jack-Changs-MacBook-Air:Calculator jack$ git remote
+origin
+Jack-Changs-MacBook-Air:Calculator jack$ python3
+Python 3.11.0 (v3.11.0:deaf509e8f, Oct 24 2022, 14:43:23) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+[1]+  Stopped                 python3
+Jack-Changs-MacBook-Air:Calculator jack$ python3 test.py 
+Hello word
+Jack-Changs-MacBook-Air:Calculator jack$ 
+Jack-Changs-MacBook-Air:Calculator jack$ 
+Jack-Changs-MacBook-Air:Calculator jack$ 
+Jack-Changs-MacBook-Air:Calculator jack$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+Jack-Changs-MacBook-Air:Calculator jack$ git add test.py 
+Jack-Changs-MacBook-Air:Calculator jack$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.py
+
+Jack-Changs-MacBook-Air:Calculator jack$ git commit -m "test"
+[main (root-commit) 9aff61b] test
+ Committer: Jack_Chang <jack@Jack-Changs-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 6 insertions(+)
+ create mode 100644 test.py
+Jack-Changs-MacBook-Air:Calculator jack$ git config --global user.name
+Jack-Changs-MacBook-Air:Calculator jack$ git config --global user.name "Jack0723"
+Jack-Changs-MacBook-Air:Calculator jack$ git config --global user.email j62016@gmail.com
+Jack-Changs-MacBook-Air:Calculator jack$ git commit -m "test"
+On branch main
+nothing to commit, working tree clean
+Jack-Changs-MacBook-Air:Calculator jack$ git branch
+* main
+Jack-Changs-MacBook-Air:Calculator jack$ git push origin main
+fatal: unable to access 'https://github.com/Jack0723/Calculator.git/': Could not resolve host: github.com
+Jack-Changs-MacBook-Air:Calculator jack$ git remote set-url origin https://github.com/Jack0723/Calculator.git
+Jack-Changs-MacBook-Air:Calculator jack$ git push origin main
+fatal: unable to access 'https://github.com/Jack0723/Calculator.git/': Could not resolve host: github.com
+Jack-Changs-MacBook-Air:Calculator jack$ git push -u origin main
+fatal: unable to access 'https://github.com/Jack0723/Calculator.git/': Could not resolve host: github.com
+Jack-Changs-MacBook-Air:Calculator jack$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 272 bytes | 272.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Jack0723/Calculator.git
+ * [new branch]      main -> main
+Jack-Changs-MacBook-Air:Calculator jack$ 
